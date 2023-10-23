@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>照片墙</title>
+</head>
+
+<body>
+  <link rel="stylesheet" href="photo.css">
+  <div class="nav">
+    <a href="index.html">首页</a>
+    <a href="record.html">做题记录</a>
+    <a href="self.html">个人介绍</a>
+    <a href="share.html">分享</a>
+  </div>
+
+  <h2>take photos</h2>
+  <div class="bigbox">
+    <div class="box">
+      <ul>
+        <li><img src="photo-images/photo1.jpg"></li>
+        <li><img src="photo-images/photo2.jpg"></li>
+        <li><img src="photo-images/photo3.jpg"></li>
+        <li><img src="photo-images/photo4.jpg"></li>
+        <li><img src="photo-images/photo5.jpg"></li>
+        <li><img src="photo-images/photo6.jpg"> </li>
+        <li><img src="photo-images/photo7.jpg"></li>
+        <li><img src="photo-images/photo8.jpeg"></li>
+      </ul>
+    </div>
+    <img src="photo-images/photo9.jpeg">
+    <img src="photo-images/photo10.jpeg">
+    <img src="photo-images/photo11.jpeg">
+    <img src="photo-images/photo12.jpeg">
+    <img src="photo-images/photo13.jpeg">
+    <img src="photo-images/photo14.jpeg">
+    <img src="photo-images/photo15.jpeg">
+    <img src="photo-images/photo16.jpeg">
+    <img src="photo-images/photo17.jpeg">
+    <img src="photo-images/photo18.jpeg">
+    <img src="photo-images/photo19.jpg">
+    <img src="photo-images/photo20.jpg">
+    <img src="photo-images/photo21.jpg">
+  </div>
+  <p>to be continue......</p>
+
+
+  <script>
+    const pho = document.querySelectorAll(`.box img`)
+    // let i = 0
+    for (let i = 0; i < pho.length; i++) {
+      pho[i].addEventListener(`mouseenter`, function () {
+        for (let i = 0; i < pho.length; i++) {
+          pho[i].style.width = `100px`
+        }
+        pho[i].style.width = `500px`
+      })
+    }
+
+
+
+    for (let i = 0; i < pho.length; i++) {
+      pho[i].addEventListener(`click`, function () {
+        pho[i].style.width = `800px`
+        pho[i].style.height = `700px`
+      })
+    }
+
+    for (let i = 0; i < pho.length; i++) {
+      pho[i].addEventListener(`mouseleave`, function () {
+        for (let i = 0; i < pho.length; i++) {
+          pho[i].style.height = `340px`
+
+        }
+      })
+    }
+  </script>
+</body>
+
+</html>

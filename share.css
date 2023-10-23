@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgba(103, 112, 160, 0.481) url(images/bg2.jpg) no-repeat fixed center;
+  background-size: 80%;
+}
+
+li {
+  list-style: none;
+}
+
+.right p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  text-indent: 2em;
+  font-style: italic;
+  font-size: 20px;
+  font-family: serif
+}
+
+.nav {
+  position: sticky;
+  top: 0px;
+  background-color: rgba(98, 106, 147, 0.3);
+  height: 60px;
+  line-height: 60px;
+}
+
+a {
+  display: inline-block;
+  margin-left: 70px;
+  width: 300px;
+  color: rgb(132, 72, 83);
+  text-decoration: none;
+  font-style: italic;
+  font-family: serif;
+  font-size: 20px;
+  text-shadow: 1px 1px rgb(12, 12, 12);
+}
+
+.search {
+  margin-left: 600px;
+  margin-top: 10px;
+  width: 200px;
+  height: 20px;
+}
+
+.top img {
+  vertical-align: middle;
+  margin-left: 200px;
+  margin-top: 10px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+.id {
+  display: inline-block;
+  margin-left: 10px;
+
+}
+
+.bigbox {
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+  margin-top: 30px;
+  margin-left: 240px;
+  width: 250px;
+}
+
+ul {
+  position: fixed;
+  top: 300px;
+}
+
+.left a {
+  margin: 0;
+  margin-top: 10px;
+  width: 200px;
+}
+
+#life,
+#study,
+#book {
+  margin: 10px 0;
+  border-bottom: 3px dashed rgb(124, 124, 183);
+}
+
+
+.right {
+  float: left;
+}
+
+.right div {
+  width: 650px;
+  background-color: rgba(96, 104, 141, 0.203);
+}
